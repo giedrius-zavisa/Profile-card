@@ -1,0 +1,130 @@
+*,
+*:after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan:hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-greyish-blue: hsl(227, 10%, 46%);
+    --dark-grey: hsl(0, 0%, 59%);
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-position: right 52vw bottom 40vh, left 50vw top 50vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+.bg-top .bg-bottom {
+    position: absolute;
+    z-index: -1;
+}
+
+.container {    
+    background-color: white;
+    border-radius: 25px;
+}
+
+p {
+    font-weight: 400;
+    color: var(--dark-greyish-blue);
+}
+
+h2 {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+/* Card Header styling */
+
+.card-header {
+    width: 100%;
+    height:auto;
+    object-fit: contain;
+}
+
+.card-header > img {
+    border-radius: 25px 25px 0 0;
+}
+
+/* User information styling */
+
+.card-user {
+   
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    
+}
+
+.card-user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.card-user-info > p {
+    font-size: 1.2em;
+    margin-top: 0.1em;
+}
+
+.card-user > img {
+    
+    position:absolute;
+    top: -7em;
+    border: 0.2em solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* User Statistics styling */
+
+.card-information {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5em;
+    gap: 3em;
+
+    border-top: 0.1em solid var(--dark-grey);
+}
+
+.card-statistics {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer styling */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 2em;
+}
+
+.attribution a {
+
+    color: hsl(228, 45%, 44%); 
+}
