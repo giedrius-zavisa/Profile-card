@@ -22,12 +22,12 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![Desktop](./screenshot.jpg)
+![Desktop](https://github.com/Sypnotick/Profile-card/blob/main/images/desktop-preview.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live site URL](https://sypnotick.github.io/Profile-card/)
 
 ## My process
 
